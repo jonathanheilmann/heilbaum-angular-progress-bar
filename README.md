@@ -1,2 +1,2 @@
-# heilbaum-ionic-progress-bar
-Ionic progress bar
+# @heilbaum/angular-progress-bar
+Angular progress bar

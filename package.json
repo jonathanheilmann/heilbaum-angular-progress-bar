@@ -1,5 +1,5 @@
 {
-  "name": "@heilbaum/ionic-progress-bar",
+  "name": "@heilbaum/angular-progress-bar",
   "version": "0.0.1",
   "description": "Angular component to show progress bars",
   "main": "./dist/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonathanheilmann/heilbaum-ionic-progress-bar.git"
+    "url": "git+https://github.com/jonathanheilmann/heilbaum-angular-progress-bar.git"
   },
   "keywords": [
     "angular",
@@ -22,9 +22,9 @@
   "author": "HeilBaum",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jonathanheilmann/heilbaum-ionic-progress-bar/issues"
+    "url": "https://github.com/jonathanheilmann/heilbaum-angular-progress-bar/issues"
   },
-  "homepage": "https://github.com/jonathanheilmann/heilbaum-ionic-progress-bar#readme",
+  "homepage": "https://github.com/jonathanheilmann/heilbaum-angular-progress-bar#readme",
   "dependencies": {},
   "devDependencies": {
     "@angular/common": "^4.1.2",
