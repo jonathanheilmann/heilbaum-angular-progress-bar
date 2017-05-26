@@ -46,6 +46,7 @@ import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@a
             overflow: hidden;
             padding: 5px;
             border-radius: 20px;
+            transition: width 200ms linear;
         }
         .progress-bar-danger {
             background-color: #f53d3d;
@@ -72,6 +73,7 @@ import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@a
         <div [class]="'progress progress-' + size + ' progress-bg-' + bgColor">
             <div role="progressbar"
                  [class]="'progress-bar progress-bar-' + color"
+                 [style.transition-duration]="transitionDuration + 'ms'"
                  [style.width]="progress + '%'"
                  [style.min-width]="hideLabel ? 0 : null">
                 <span class="progress-label">{{ hideLabel ? '&nbsp;' : (label ? label : progress + '%') }}</span>
@@ -89,6 +91,7 @@ export class HeilbaumProgressBarComponent {
     @Input() label: string = '';
     @Input() progress: number = 0;
     @Input() size: string = HeilbaumProgressBarSize.large;
+    @Input() transitionDuration: number = 200;
 
 }
 
