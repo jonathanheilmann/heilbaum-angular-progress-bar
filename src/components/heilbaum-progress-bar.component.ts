@@ -70,8 +70,11 @@ import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@a
     `],
     template: `
         <div [class]="'progress progress-' + size + ' progress-bg-' + bgColor">
-            <div [class]="'progress-bar progress-bar-' + color" role="progressbar" [style.width]="progress + '%'">
-                <span class="progress-label">{{ progress }}%</span>
+            <div role="progressbar"
+                 [class]="'progress-bar progress-bar-' + color"
+                 [style.width]="progress + '%'"
+                 [style.min-width]="hideLabel ? 0 : null">
+                <span class="progress-label">{{ hideLabel ? '&nbsp;' : (label ? label : progress + '%') }}</span>
             </div>
         </div>
     `,
@@ -82,6 +85,8 @@ export class HeilbaumProgressBarComponent {
 
     @Input('backgroundColor') bgColor: string = HeilbaumProgressBarBgColor.grey;
     @Input() color: string = HeilbaumProgressBarColor.info;
+    @Input() hideLabel: boolean = false;
+    @Input() label: string = '';
     @Input() progress: number = 0;
     @Input() size: string = HeilbaumProgressBarSize.large;
 
