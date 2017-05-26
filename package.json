@@ -1,6 +1,6 @@
 {
   "name": "@heilbaum/angular-progress-bar",
-  "version": "0.0.1",
+  "version": "0.1.0-dev",
   "description": "Angular component to show progress bars",
   "main": "./dist/index.js",
   "scripts": {
