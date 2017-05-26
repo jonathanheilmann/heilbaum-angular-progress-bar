@@ -1,0 +1,38 @@
+{
+  "name": "@heilbaum/angular-progress-bar",
+  "version": "0.1.0",
+  "description": "Angular component to show progress bars",
+  "main": "./dist/index.js",
+  "scripts": {
+    "ngc": "ngc",
+    "build": "rm -rf aot dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish --acces public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanheilmann/heilbaum-angular-progress-bar.git"
+  },
+  "keywords": [
+    "angular",
+    "ionic",
+    "component",
+    "progress"
+  ],
+  "author": "HeilBaum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathanheilmann/heilbaum-angular-progress-bar/issues"
+  },
+  "homepage": "https://github.com/jonathanheilmann/heilbaum-angular-progress-bar#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/common": "^4.1.2",
+    "@angular/compiler": "^4.1.2",
+    "@angular/compiler-cli": "^4.1.2",
+    "@angular/core": "^4.1.2",
+    "rxjs": "^5.4.0",
+    "typescript": "^2.3.2",
+    "zone.js": "^0.8.10"
+  }
+}
